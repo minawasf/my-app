@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/providers/providers";
 import BackToTop from "@/components/back-to-top";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Fresh Cart",
@@ -23,6 +24,7 @@ export default function RootLayout({
             {children}
             <BackToTop />
           </Providers>
+          <SpeedInsights />
         </body>
       </html>
   );
